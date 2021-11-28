@@ -3,7 +3,7 @@ onload= function(){
     let nome = localStorage.getItem('Texto');
     let gameOverText = document.getElementById('Texto');
     let Score = document.getElementById('Score')
-       gameOverText.innerHTML = 'Parabens ' + nome + ' você completou o jogo.'
+       gameOverText.innerHTML = `Parabens ${nome? nome:''} você completou o jogo.`
     
     
 
