@@ -6,8 +6,8 @@
 
 ### Conteúdo: [**Jogo da Memória**]
 
-<img src="./images/game.png" alt="Imagem do jogo da memória" width="500" height="500">
+<img src="./images/game.png" alt="Imagem do jogo da memória" max-width="800" max-height="400">
 
 ### Conteúdo: [**Tela Incial**]
 
-<img src="./images/tela_inicial.png" alt="Imagem da tela inicial" width="500" height="500">
+<img src="./images/Tela_inicial.png" alt="Imagem da tela inicial" width="800" height="400">
