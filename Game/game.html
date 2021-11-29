@@ -19,24 +19,27 @@
     <title>Memória</title>
   </head>
   <body>
-    <div id="GameBoard"></div>
+    <div id="particles-container"></div>
+    <main>
+      <div id="GameBoard"></div>
 
-    <div id="GameOver">
-      <div id="Texto"></div>
-      <div id="Scores">Teste:</div>
-      <div id="caixa">
-        <p id="Score"></p>
-        <div id="moves">Jogadas: 0</div>
-        <div id="time">Tempo: 00:00</div>
+      <div id="GameOver">
+        <div id="Texto"></div>
+        <div id="Scores">Teste:</div>
+        <div id="caixa">
+          <p id="Score"></p>
+          <div id="moves">Jogadas: 0</div>
+          <div id="time">Tempo: 00:00</div>
+        </div>
+
+        <button class="Restart" onclick="Restart()">Jogue novamente</button>
+
+        <button class="Restart">
+          <a href="../index.html"> Voltar ao Início </a>
+        </button>
       </div>
-
-      <button class="Restart" onclick="Restart()">Jogue novamente</button>
-
-      <button class="Restart">
-        <a href="../index.html"> Voltar ao Início </a>
-      </button>
-    </div>
-
+    </main>
+    <script src="../Pagina Inicial/plugins/particles.js"></script>
     <script src="./game.js"></script>
     <script src="./interface.js"></script>
     <script src="../Pagina Inicial/index.js"></script>
