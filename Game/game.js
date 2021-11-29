@@ -127,6 +127,7 @@ let game = {
       },
       
       timer(){
+         let timer = document.querySelector("#timer")
          this.time++;
         if(this.segundosUnidade < 9 && this.segundosDezena >= 0){
           this.segundosUnidade++
@@ -138,14 +139,13 @@ let game = {
          this.segundosUnidade = 0;  
          this.minutosUnidade++
         }
+        
 },
 
       points(){
-         
-         this.pontosTotal = Math.round((this.point * 1000) / ((this.moves + this.time) / 4));
-      
-        
 
+         this.pontosTotal = Math.round((this.point * 1000) / ((this.moves + this.time) / 4));
+         
       }
 
 

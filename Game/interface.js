@@ -1,9 +1,6 @@
 const front = "card_front";
-
 const back = "card_back";
-
 const CARD = "card";
-
 const ICON = "icon";
 let tempo = document.getElementById('time');
 
@@ -40,8 +37,6 @@ function initializeCards(cards){
          cardElement.addEventListener('click', flipCard);
          gameBoard.appendChild(cardElement);
     
-
-
     })
 }
 
@@ -107,36 +102,40 @@ function Restart(){
        game.segundosDezena = 0;
        game.segundosUnidade = -1;
        game.moves = 0;
-       movesAtualizar()
+       movesAtualizar();
        
-
 }
 
 function movesAtualizar(){
-   let movesInterface = document.getElementById('moves');   
+   let movesInterface = document.getElementById('moves');
+   let jogadas = document.querySelector("#jogadas")
    movesInterface.innerHTML = 'Jogadas: ' + game.moves;
    if(game.checkGameOver()){
-      
       movesInterface.innerHTML = 'Jogadas: ' + game.moves;
-      
-
-
-
    }
+   jogadas.innerHTML = game.moves
+   return game.moves
 }
 
 function atualizarTexto(){
+   let timer = document.querySelector("#timer")
    if(!game.checkGameOver()){
    game.timer(); 
    }
    tempo.innerHTML = 'Tempo: ' + game.minutosDezena + game.minutosUnidade + ':' + game.segundosDezena + game.segundosUnidade
+   
+   timer.innerHTML = game.minutosDezena + game.minutosUnidade + ':' + game.segundosDezena + game.segundosUnidade
+   return game.minutosDezena + game.minutosUnidade + ':' + game.segundosDezena + game.segundosUnidade
 
 }
 function atualizarPoints(){
    let pointsInterface = document.getElementById('Scores');
+   let pontosFim = document.querySelector("#pontosFim")
        pointsInterface.innerHTML =  'Você obteve um total de: ' + game.pontosTotal + ' pontos.';
        
        localStorage.setItem("Score", game.pontosTotal);
+       pontosFim.innerHTML = game.pontosTotal
+       return game.pontosTotal
 }  
 
 function cardFlipped(elemento){
