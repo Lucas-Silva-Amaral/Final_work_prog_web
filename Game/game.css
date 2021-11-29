@@ -275,4 +275,18 @@ a {
     left: 35%;
     transform: translateX(-80%);
   }
+
+  #modal1 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    top: 0;
+    right: 35%;
+    transform: translateX(80%);
+  }
 }
