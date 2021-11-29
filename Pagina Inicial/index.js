@@ -117,8 +117,6 @@ onload= function(){
     let Score = document.getElementById('Score')
        gameOverText.innerHTML = `Parabens ${nome? nome:''} você completou o jogo.`
     
-    
-
 }
 
 

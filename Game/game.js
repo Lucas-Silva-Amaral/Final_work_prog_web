@@ -143,7 +143,7 @@ let game = {
       points(){
          
          this.pontosTotal = Math.round((this.point * 1000) / ((this.moves + this.time) / 4));
-         console.log(this.pontosTotal)
+      
         
 
       }
